@@ -52,5 +52,7 @@ public class Macchiato extends Coffee {
     public SizeCoffee getSize() {
         return size;
     }
-
+    public static IBuilder<Macchiato> makeMeACoffee(){
+        return new MacchiatoBuilder();
+    }
 }
