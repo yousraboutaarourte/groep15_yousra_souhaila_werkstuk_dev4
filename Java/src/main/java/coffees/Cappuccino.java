@@ -53,6 +53,8 @@ public class Cappuccino extends Coffee {
         return size;
     }
 
-
+    public static IBuilder<Cappuccino> makeMeACoffee(){
+        return new CappucinoBuilder();
+    }
 
 }
