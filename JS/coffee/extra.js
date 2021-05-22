@@ -1,3 +1,4 @@
+"use strict";
 const Cream = (coffee) => {
     return {
         unitPrice: coffee.unitPrice,
