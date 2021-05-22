@@ -24,4 +24,15 @@ public class Extra extends Coffee{
     public double getPrice() {
         return coffee.getPrice();
     }
+
+    @Override
+    public Intensity getIntensity() {
+        return coffee.getIntensity();
+    }
+
+    @Override
+    public SizeCoffee getSize() {
+        return coffee.getSize();
+    }
+
 }

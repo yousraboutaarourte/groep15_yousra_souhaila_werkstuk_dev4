@@ -3,6 +3,8 @@ package coffees;
 public class Cappuccino extends Coffee {
     private String name;
     private String description;
+    private SizeCoffee size;
+    private Intensity intensity;
     private double price;
 
 
@@ -14,6 +16,13 @@ public class Cappuccino extends Coffee {
         this.description = description;
     }
 
+    public void setSize(SizeCoffee size) {
+        this.size = size;
+    }
+
+    public void setIntensity(Intensity intensity) {
+        this.intensity = intensity;
+    }
 
     public void setPrice(double price) {
         this.price = price;
@@ -33,5 +42,17 @@ public class Cappuccino extends Coffee {
     public double getPrice() {
         return price;
     }
+
+    @Override
+    public Intensity getIntensity() {
+        return intensity;
+    }
+
+    @Override
+    public SizeCoffee getSize() {
+        return size;
+    }
+
+
 
 }
