@@ -1,4 +1,4 @@
-import { twoDigit } from "../util/util.js";
+import {sortSelection, twoDigit } from "../util/util.js";
 
 const UNIT_PRICE = "unitPrice";
 
@@ -10,4 +10,8 @@ export const payOne = (methodPayment, coffee, callbackStrategy) => {
 export const payAll = (methodPayment, coffees = [], callbackStrategy) => {
     let amount = coffees.reduce((a, b) => a + b.price, 0);
     callbackStrategy(methodPayment, twoDigit(amount));
+}
+
+export const sortCoffeeByUnitPrice = (coffees) => {
+    return sortSelection(coffees, UNIT_PRICE);
 }
